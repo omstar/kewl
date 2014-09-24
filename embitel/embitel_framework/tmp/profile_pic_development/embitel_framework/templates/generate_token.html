@@ -1,0 +1,69 @@
+<html>
+
+<body style="background: url(/media/PN.jpg) no-repeat; background-size: 100%;">
+
+
+<script type="text/javascript">
+onload=function(){
+var e=document.getElementById("refreshed");
+if(e.value=="no")e.value="yes";
+else{e.value="no";location.reload();}
+}
+</script>
+
+<img src="/media/embitel_logo.png" alt="EMBITEL" height="13%" width="18%"> 
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" name="logout" value="Logout" />
+</form>
+</div>
+
+
+
+
+<p/></p>   
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+    <div id="menu" class="menu">
+        <!-- menu elements -->
+        <div class="menu-element">
+            <a href='/embitel/vault/'><b>Dashboard</b></a>
+        </div>
+        <div class="menu-element">
+            <a href='/embitel/upload_certificate/'><b>IOS Push Notifications</b></a>
+        </div>
+    </div>
+
+
+
+<div style="padding-left:18%; padding-top:5%;" >
+
+<form action="/embitel/generate_token/"
+enctype="multipart/form-data" method="post">
+
+<p>
+App Name:
+<input type="input" name="app_name">
+<div class="servererror"> {% if form.errors.app_name %}* {{ form.errors.app_name|join:"| " }}<br/>{% endif %} </div>
+</p>
+
+<p>
+Upload your P12 Certificate:
+<input style="background-color:grey" type="file" name="p12_certificate">
+<div class="servererror"> {% if form.errors.p12_certificate %}* {{ form.errors.p12_certificate|join:"| " }}<br/>{% endif %} </div>
+</p>
+<div>
+
+<p>
+Password:
+<input type="password" name="password">
+<div class="servererror"> {% if form.errors.password %}* {{ form.errors.password|join:"| " }}<br/>{% endif %} </div>
+</p>
+
+<p>
+<input style="background-color:#F29900" name="generate_token" type="submit" value="Submit">
+</p>
+</div>
+</form>
+
+</body>
+</html>

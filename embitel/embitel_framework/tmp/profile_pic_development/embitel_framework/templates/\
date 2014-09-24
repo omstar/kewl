@@ -1,0 +1,42 @@
+<html>
+<body>
+
+<img src="/media/embitel.jpg" alt="EMBITEL" >
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" name="logout" value="Logout" />
+</form>
+</div>
+
+
+<p/></p> 
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+    <div id="menu" class="menu">
+        <!-- menu elements -->
+        <div class="menu-element">
+            <a href='/embitel/vault/'>Dashboard</a>
+        </div>
+        <div class="menu-element">
+            <a href='/embitel/upload_certificate/'>IOS Push Notiications</a>
+        </div>
+    </div>
+
+
+<p/>
+
+<p>
+Your Applications and Tokens:</p>
+<table border=1>
+    <tr>
+       <b> <td>App Name </td> <td>Token</td> <td> Published date </td></b>
+    </tr>
+
+{% for obj in objects %}
+    <tr>
+        <td>{{ obj.app_name }}</td> <td>{{ obj.emb_token }}</td> <td>{{ obj.created_at }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

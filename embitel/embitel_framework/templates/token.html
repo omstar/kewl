@@ -1,0 +1,42 @@
+<html>
+<body style="background: url(/media/PN.jpg) no-repeat; background-size: 100%;">
+
+<img src="/media/embitel_logo.png" alt="EMBITEL" height="13%" width="18%">
+
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" name="logout" value="Logout" />
+</form>
+</div>
+
+
+<p/></p> 
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+    <div id="menu" class="menu">
+        <!-- menu elements -->
+        <div class="menu-element">
+            <a href='/embitel/vault/'><b>Dashboard</b></a>
+        </div>
+        <div class="menu-element">
+            <a href='/embitel/upload_certificate/'><b>IOS Push Notiications</b></a>
+        </div>
+    </div>
+
+
+<div style="padding-top:10%;" >
+
+<p>
+Please use the following token number to send push notifications from your Application!
+</p>
+<p>
+Token Number is <b>{{ token }}</b>
+</p>
+
+</p>
+<p>
+<b>You can check all your generated tokens on <a href="/embitel/vault/">Dashboard</a></b>
+</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body style="background: url(/media/PN.jpg) no-repeat; background-size: 100%;">
+<img src="/media/embitel_logo.png" alt="EMBITEL" height="13%" width="18%">
+
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" name="logout" value="Logout" />
+</form>
+</div>
+
+
+<p/></p> 
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+    <div id="menu" class="menu">
+        <!-- menu elements -->
+        <div class="menu-element">
+            <a href='/embitel/vault/'><b>Dashboard</b></a>
+        </div>
+        <div class="menu-element">
+            <a href='/embitel/upload_certificate/'><b>IOS Push Notifications</b></a>
+        </div>
+    </div>
+
+
+<div style="padding-top:10%;" >
+
+<p>
+<b style="color:blue">Status:</b> {{ status }}
+</p>
+</div>
+
+</body>
+</html>

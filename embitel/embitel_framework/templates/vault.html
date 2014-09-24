@@ -1,0 +1,63 @@
+<html>
+<body>
+
+<div>
+<img src="/media/embitel_logo.png" alt="EMBITEL" height="13%" width="18%">
+
+    <div>
+    <img style="float:right;" src="/media/pushnotifications1.png"></div>
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" id= "logout" name="logout" value="Logout" />
+</form>
+</div>
+
+
+&nbsp;<br/>
+<br/>
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+
+<ol id="toc">
+
+    <li class="current"><a href="/embitel/vault/"><span>Dashboard</span></a></li>
+
+    <li><a href="/embitel/upload_certificate/"><span>iOS Push Notifications</span></a></li>
+
+    <li><a href="/embitel/manage_teams/"><span>Team Management</span></a></li>
+
+    <li><a href="/embitel/dashboard/configure_notifications/"><span>Kewl Notifications</span></a></li>
+
+
+</ol>
+
+<div class="content">
+
+
+	{% if objects %}
+	    <p>
+	    Your Applications and Tokens:</p>
+	    <table border="1" width="75%">
+		<tr>
+		   <td align="center"><b>App Name</b></td> <td align="center"><b>Token</b></td> <td align="center"><b> Published date </b></td>
+		   <td align="center"><b> Send Message</b></td>
+		</tr>
+
+	    {% for obj in objects %}
+		<tr>
+		    <td align="center">{{ obj.app_name }}</td> <td align="center">{{ obj.emb_token }}</td> <td align="center">{{ obj.created_at }}</td>
+		    <td align="center"><a href="/embitel/configure_PN/{{ obj.id }}/">Click Here</a></td>
+		</tr>
+	    {% endfor %}
+
+	    </table>
+	{% else  %}
+	<p>
+	<b>You haven't generated token for any of your applications.</b>
+	</p>
+	<p>
+	<a href="/embitel/upload_certificate/"><b>Click here</b></a> to generate token for your application.!
+	</p>
+	{% endif %}
+</div>
+</body>
+</html>

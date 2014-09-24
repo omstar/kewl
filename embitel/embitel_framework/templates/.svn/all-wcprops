@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates
+END
+kewl_dashboard_PN.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/kewl_dashboard_PN.html
+END
+unregister.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/unregister.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/login.html
+END
+teams.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/teams.html
+END
+generate_token.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/generate_token.html
+END
+dummy.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/dummy.html
+END
+vault.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/vault.html
+END
+bulk_PN_status.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/bulk_PN_status.html
+END
+configure_PN.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/configure_PN.html
+END
+kewl_notifications_status.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/kewl_notifications_status.html
+END
+token.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/templates/token.html
+END

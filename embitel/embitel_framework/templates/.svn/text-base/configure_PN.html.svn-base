@@ -1,0 +1,193 @@
+<html>
+
+<body style="background: url(/media/PN.jpg) no-repeat; background-size: 100%;">
+
+<img src="/media/embitel_logo.png" alt="EMBITEL" height="13%" width="18%">
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" name="logout" value="Logout" />
+</form>
+</div>
+
+<p/></p>   
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+
+<ol id="toc">
+
+    <li><a href="/embitel/vault/"><span>Dashboard</span></a></li>
+
+    <li><a href="/embitel/upload_certificate/"><span>iOS Push Notifications</span></a></li>
+
+    <li><a href="/embitel/manage_teams/"><span>Team Management</span></a></li>
+    <li><a href="/embitel/dashboard/configure_notifications/"><span>Kewl Notifications</span></a></li>
+
+
+</ol>
+
+<script src="/media/accordion.js"></script>
+
+<script>
+$(document).ready(function(){
+        $("#menu_body").hide();
+        //toggle the componenet with class menu_body
+        $("#menu_head").click(function(){
+                $(this).next("#menu_body").slideToggle(600); 
+        $("#menu_body1").hide();
+        $("#menu_body2").hide();
+        });
+});
+
+$(document).ready(function(){
+        $("#menu_body1").hide();
+        //toggle the componenet with class menu_body
+        $("#menu_head1").click(function(){
+                $(this).next("#menu_body1").slideToggle(600); 
+        $("#menu_body").hide();
+        $("#menu_body2").hide();
+        });
+});
+
+$(document).ready(function(){
+        $("#menu_body2").hide();
+        //toggle the componenet with class menu_body
+        $("#menu_head2").click(function(){
+                $(this).next("#menu_body2").slideToggle(600); 
+        $("#menu_body").hide();
+        $("#menu_body1").hide();
+        });
+});
+
+
+</script>
+
+<form action="/embitel/PN/{{encoded_key1}}/status/" method="post">
+    <div style="padding-left:20%; padding-top:1%;" >
+			<p>
+			Text Message:
+			<textarea name="PN_message" maxlength="200" required></textarea>
+			<div class="servererror"> {% if form.errors.PN_message %}* {{ form.errors.PN_message|join:"| " }}<br/>{% endif %} </div>
+			</p>
+
+                <h3 class="app-ico ico_magnify icon" id="menu_head">send to ALL</h3>
+                <div class="menu_body" id="menu_body" style="display: none;">
+			<table border="0">
+			<tr>
+			<td>
+			<p>
+			<input style="background-color:#F29900" name="send_bulk_PN" type="submit" value="Send to ALL">
+			</p>
+			</td>
+			</tr>
+			<tr/><tr/>
+			</table>
+                </div>
+
+
+             {% if users %}
+                <h3 class="app-ico ico_magnify icon" id="menu_head1">Send to selected users</h3>
+                <div class="menu_body1" id="menu_body1" style="display: none;">
+			<table border="0">
+			<tr>
+			<td width="50%">
+			   <p>
+				<select name="users" multiple style="width: 100%;">
+				  {% for user in users %}
+				      <option value="{{ user }}">{{ user }}</option>
+				  {% endfor %}
+				</select>
+			   </p>
+			</td>
+			<td/>
+			<td>
+			   <p>
+				<input style="background-color:#F29900" name="send_bulk_PN" type="submit" value="Send to selected users">
+			   </p>
+			</td>
+			</tr>
+			<tr/><tr/>
+			</table>
+
+                </div>
+             {% endif %}
+
+                <h3 class="app-ico ico_magnify icon" id="menu_head2">Send to limit users</h3>
+                <div class="menu_body2" id="menu_body2" style="display: none;">
+			<table>
+			<tr>
+			<td>
+				Latest <input type="text" name="limit" style="width:10%"> Users
+			</td>
+                        </tr>
+                        </tr>
+                        <tr>
+			<td>
+				<input style="background-color:#F29900" name="send_bulk_PN" type="submit" value="Send">
+			</td>
+			</tr>
+			</table>
+
+                </div>
+</form>
+
+<!--
+<form action="/embitel/PN/{{encoded_key1}}/status/" method="post">
+<div style="padding-left:20%; padding-top:1%;" >
+<table border="0">
+<tr>
+<td>
+<p>
+Text Message:
+<textarea name="PN_message" maxlength="200" required></textarea>
+<div class="servererror"> {% if form.errors.PN_message %}* {{ form.errors.PN_message|join:"| " }}<br/>{% endif %} </div>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<input style="background-color:#F29900" name="send_bulk_PN" type="submit" value="Send to ALL">
+</p>
+</td>
+</tr>
+<tr/><tr/>
+</table>
+<br/>
+<table border="0">
+<tr>
+<td width="50%">
+   <p>
+	<select multiple style="width: 100%;">
+	  {% for user in users %}
+	      <option value="{{ user }}">{{ user }}</option>
+	  {% endfor %}
+	</select> 
+   </p>
+</td>
+<td/>
+<td>
+   <p>
+	<input style="background-color:#F29900" name="send_bulk_PN" type="submit" value="Send to selected users">
+   </p>
+</td>
+</tr>
+<tr/><tr/>
+</table>
+
+<table>
+<tr>
+<td>
+        Latest <input type="text" name="limit" style="width:10%"> Users
+</td>
+<td>
+	<input style="background-color:#F29900" name="send_bulk_PN" type="submit" value="Send to limit users">
+</td>
+</tr>
+</table>
+
+</div>
+</form>
+<!-->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+
+<body> <!-- style="background: url(/media/PN.jpg) no-repeat; background-size: 100%;"> --!>
+
+<img src="/media/embitel.jpg" alt="EMBITEL" height="13%" width="18%">
+
+<!--
+<div style="position: absolute;  left: 100;">
+    <img style="float:right;" src="/media/Notifications.png" alt="Notifications" height="100%" width="25%"></div>
+</div>
+--!>
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" name="logout" value="Logout" />
+</form>
+</div>
+
+<p/></p>
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+
+<ol id="toc">
+
+ {% if user.is_staff %}
+    <li><a href="/embitel/vault/"><span>Dashboard</span></a></li>
+
+    <li><a href="/embitel/upload_certificate/"><span>iOS Push Notifications</span></a></li>
+  {% endif %}
+
+    <li><a href="/embitel/manage_teams/"><span>Team Management</span></a></li>
+
+    <li class="current"><a href="/embitel/dashboard/configure_notifications/"><span>Kewl Notifications</span></a></li>
+
+</ol>
+
+<div style="text-align:center">
+&nbsp;<br/>
+<img src="/media/Mobility.png" alt="EMBITEL" align="middle">
+</div>
+
+<div><!-- style="padding-top:10%;" --!>
+
+<p>
+<b style="color:blue">Status:</b> {{ status }}
+</p>
+
+
+<p>
+<a href='/embitel/dashboard/configure_notifications/'>Click here</a> to send more notifications!
+</p>
+</div>
+
+
+
+</body>
+</html>

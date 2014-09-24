@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations
+END
+0035_auto__del_flatepage.py
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0035_auto__del_flatepage.py
+END
+0007_auto__del_field_gcmdevices_gcm_device_key__add_field_gcmdevices_gcm_de.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0007_auto__del_field_gcmdevices_gcm_device_key__add_field_gcmdevices_gcm_de.py
+END
+0005_auto__del_certificates__del_unique_certificates_user_app_name__add_gcm.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0005_auto__del_certificates__del_unique_certificates_user_app_name__add_gcm.py
+END
+0020_auto__add_field_apnsdevices_friends.py
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0020_auto__add_field_apnsdevices_friends.py
+END
+0003_auto__add_field_apnsdevices_channels.py
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0003_auto__add_field_apnsdevices_channels.py
+END
+0027_auto__add_field_messages_start_time__add_field_messages_end_time__add_.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0027_auto__add_field_messages_start_time__add_field_messages_end_time__add_.py
+END
+0019_auto__add_groups.py
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0019_auto__add_groups.py
+END
+0001_initial.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0001_initial.py
+END
+0006_auto__add_field_gcmdevices_gcm_device_key.py
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0006_auto__add_field_gcmdevices_gcm_device_key.py
+END
+0031_auto__chg_field_gcmdevices_status_message.py
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0031_auto__chg_field_gcmdevices_status_message.py
+END
+0017_auto__add_field_apnsdevices_email__add_field_gcmdevices_email.py
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0017_auto__add_field_apnsdevices_email__add_field_gcmdevices_email.py
+END
+0015_auto__add_field_messages_device_type.py
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0015_auto__add_field_messages_device_type.py
+END
+0014_auto__add_messages__del_field_apnsdevices_messages__del_field_gcmdevic.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0014_auto__add_messages__del_field_apnsdevices_messages__del_field_gcmdevic.py
+END
+0030_auto__add_field_messages_location.py
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0030_auto__add_field_messages_location.py
+END
+0028_auto__add_channels.py
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0028_auto__add_channels.py
+END
+0016_auto__add_field_messages_from_phone_number.py
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0016_auto__add_field_messages_from_phone_number.py
+END
+0010_auto__add_field_apnsdevices_profile_pic__add_field_gcmdevices_profile_.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0010_auto__add_field_apnsdevices_profile_pic__add_field_gcmdevices_profile_.py
+END
+0034_auto__add_field_apnsdevices_last_heartbeat__add_field_gcmdevices_last_.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0034_auto__add_field_apnsdevices_last_heartbeat__add_field_gcmdevices_last_.py
+END
+0024_auto__add_field_apnsdevices_status_message__add_field_gcmdevices_statu.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0024_auto__add_field_apnsdevices_status_message__add_field_gcmdevices_statu.py
+END
+0021_auto__add_field_apnsdevices_pending_requests__chg_field_apnsdevices_fr.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0021_auto__add_field_apnsdevices_pending_requests__chg_field_apnsdevices_fr.py
+END
+0022_auto__add_field_groups_dob.py
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0022_auto__add_field_groups_dob.py
+END
+0018_auto__add_field_messages_from_email.py
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0018_auto__add_field_messages_from_email.py
+END
+0009_auto__del_devicedetails__del_applicationkey__del_unique_applicationkey.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0009_auto__del_devicedetails__del_applicationkey__del_unique_applicationkey.py
+END
+0008_auto__del_gcmapikey__del_unique_gcmapikey_user_app_name__add_devicedet.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0008_auto__del_gcmapikey__del_unique_gcmapikey_user_app_name__add_devicedet.py
+END
+0012_auto__del_field_apnsdevices_user_name__add_field_apnsdevices_username_.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0012_auto__del_field_apnsdevices_user_name__add_field_apnsdevices_username_.py
+END
+0023_auto__chg_field_groups_dob.py
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0023_auto__chg_field_groups_dob.py
+END
+0026_auto__add_field_messages_message_type.py
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0026_auto__add_field_messages_message_type.py
+END
+0004_auto__del_p12certificate__del_unique_p12certificate_user_app_name__add.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0004_auto__del_p12certificate__del_unique_p12certificate_user_app_name__add.py
+END
+0025_auto__add_field_apnsdevices_dob__add_field_gcmdevices_dob.py
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0025_auto__add_field_apnsdevices_dob__add_field_gcmdevices_dob.py
+END
+0036_auto__add_visitors.py
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0036_auto__add_visitors.py
+END
+0013_auto__add_field_apnsdevices_messages__add_field_gcmdevices_messages.py
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0013_auto__add_field_apnsdevices_messages__add_field_gcmdevices_messages.py
+END
+0032_auto__add_flatepage.py
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0032_auto__add_flatepage.py
+END
+0033_auto__chg_field_apnsdevices_status_message.py
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0033_auto__chg_field_apnsdevices_status_message.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/__init__.py
+END
+0029_auto__del_field_apnsdevices_channels__del_field_gcmdevices_channels.py
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0029_auto__del_field_apnsdevices_channels__del_field_gcmdevices_channels.py
+END
+0037_auto__add_field_messages_triggered_at.py
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0037_auto__add_field_messages_triggered_at.py
+END
+0002_auto__add_field_apnsdevices_unique_key__add_field_apnsdevices_unique_k.py
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0002_auto__add_field_apnsdevices_unique_key__add_field_apnsdevices_unique_k.py
+END
+0011_auto__add_field_apnsdevices_user_name__add_field_gcmdevices_user_name.py
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/migrations/0011_auto__add_field_apnsdevices_user_name__add_field_gcmdevices_user_name.py
+END

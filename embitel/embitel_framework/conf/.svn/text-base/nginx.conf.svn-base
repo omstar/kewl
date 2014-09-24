@@ -1,0 +1,288 @@
+
+#user  nobody;
+user  www-data;
+worker_processes  2;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    #passenger_root /usr/local/rvm/gems/ruby-2.0.0-p481/gems/passenger-4.0.49;
+    #passenger_ruby /usr/local/rvm/gems/ruby-2.0.0-p481/wrappers/ruby;
+    passenger_root /usr/local/rvm/gems/ruby-2.1.2/gems/passenger-4.0.50;
+    passenger_ruby /usr/local/rvm/gems/ruby-2.1.2/wrappers/ruby;
+
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+    #                  '$status $body_bytes_sent "$http_referer" '
+    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+#               auth_basic "Embitel Restricted";
+ #              auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;         
+                root   html;
+                index  index.html index.htm;
+        }
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+
+        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+        #
+        #location ~ \.php$ {
+        #    proxy_pass   http://127.0.0.1;
+        #}
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        #location ~ \.php$ {
+        #    root           html;
+        #    fastcgi_pass   127.0.0.1:9000;
+        #    fastcgi_index  index.php;
+        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+        #    include        fastcgi_params;
+        #}
+
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        #location ~ /\.ht {
+        #    deny  all;
+        #}
+    }
+
+#    server { 
+#       listen 80; 
+#       server_name redmine.embdev.in; 
+#       passenger_enabled on; 
+#       root /var/www/rails/public; 
+#}
+
+server {
+        listen  80;
+        server_name redmine.embdev.in;
+        #root /var/data/redmine/public;
+        #passenger_enabled on;
+        #client_max_body_size      10m; # Max attachemnt size
+        location / {
+        root /var/data/redmine/public;
+        passenger_enabled on;
+        client_max_body_size      10m; # Max attachemnt size
+        auth_basic "Embitel Restricted";
+        auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;
+        }
+}
+
+
+#
+#       server {
+#           listen 5000;
+#           server_name 10.99.90.32;
+#           access_log /var/log/nginx/access.kewl;
+#           error_log /var/log/nginx/error.kewl;
+#
+#           gzip on;
+#           gzip_proxied any;
+#           gzip_types text/plain application/xml application/x-javascript text/javascript text/css;
+#
+#           proxy_pass_request_headers on;
+#           proxy_set_header Host $host;
+#           proxy_set_header X-Real-IP $remote_addr;
+#           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#           proxy_read_timeout 120s;
+#
+#           client_max_body_size 20m;
+#
+#           location / {
+#              auth_basic "Embitel Restricted";
+#              auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;
+#               proxy_pass_header Server;
+#               proxy_set_header Host $http_host;
+#               proxy_redirect off;
+#               proxy_set_header X-Real-IP $remote_addr;
+#               proxy_set_header X-Scheme $scheme;
+#               proxy_connect_timeout 40;
+#               proxy_read_timeout 40;
+#
+#               proxy_pass http://127.0.0.1:8001/;
+#           }
+#
+#
+#           location ~* \.(jpg|png|gif|jpeg|js|css|htm|mp3|wav|swf|mov|doc|xls|ppt|docx|pptx|xlsx|swf|woff|otf|eot|ttf|ico|xml|ipa|plist)$ {
+#               expires max;
+#               root /home/embadmin/Documents/django_apps/django_experiments/embitel/;
+#               if (!-f $request_filename) {
+#                   break;
+#                   #proxy_pass http://127.0.0.1:8000;
+#               }
+#       #       auth_basic "Embitel Restricted";
+#       #       auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;
+#           }
+#       }
+
+server {
+    listen 80;
+    server_name tatatrent.embdev.in;
+    access_log /var/log/nginx/access.eicher;
+    error_log /var/log/nginx/error.eicher;
+
+    gzip on;
+    gzip_proxied any;
+    gzip_types text/plain application/xml application/x-javascript text/javascript text/css;
+
+    proxy_pass_request_headers on;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_read_timeout 120s;
+
+    client_max_body_size 20m;
+
+    location / {
+       auth_basic "Embitel Restricted";
+       auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;
+        proxy_pass_header Server;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_connect_timeout 40;
+        proxy_read_timeout 40;
+
+        proxy_pass http://127.0.0.1:8000/;
+    }
+
+
+    location ~* \.(jpg|png|gif|jpeg|js|css|htm|mp3|wav|swf|mov|doc|xls|ppt|docx|pptx|xlsx|swf|woff|otf|eot|ttf|ico|xml|ipa|plist)$ {
+        expires max;
+        root /home/embadmin/Documents/django_apps/eicher/it/;
+        if (!-f $request_filename) {
+            break;
+            #proxy_pass http://127.0.0.1:8000;
+        }
+#       auth_basic "Embitel Restricted";
+#       auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;
+    }
+}
+
+
+server {
+    listen 5000;
+    server_name 122.181.130.210;
+    access_log /var/log/nginx/access.automation;
+    error_log /var/log/nginx/error.automation;
+
+    gzip on;
+    gzip_proxied any;
+    gzip_types text/plain application/xml application/x-javascript text/javascript text/css;
+
+    proxy_pass_request_headers on;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_read_timeout 120s;
+
+    client_max_body_size 20m;
+
+    location / {
+       auth_basic "Embitel Restricted";
+       auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;
+        proxy_pass_header Server;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_connect_timeout 40;
+        proxy_read_timeout 40;
+
+        proxy_pass http://127.0.0.1:8001/;
+    }
+
+
+    location ~* \.(jpg|png|gif|jpeg|js|css|htm|mp3|wav|swf|mov|doc|xls|ppt|docx|pptx|xlsx|swf|woff|otf|eot|ttf|ico|xml|ipa|plist)$ {
+        expires max;
+        root /home/embadmin/Documents/django_apps/tests_automation/it/;
+        if (!-f $request_filename) {
+            break;
+            #proxy_pass http://127.0.0.1:8000;
+        }
+#       auth_basic "Embitel Restricted";
+#       auth_basic_user_file /home/embadmin/Documents/django_apps/django_experiments/.htpasswd;
+    }
+}
+
+
+
+
+    # another virtual host using mix of IP-, name-, and port-based configuration
+    #
+    #server {
+    #    listen       8000;
+    #    listen       somename:8080;
+    #    server_name  somename  alias  another.alias;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+
+    # HTTPS server
+    #
+    #server {
+    #    listen       443 ssl;
+    #    server_name  localhost;
+
+    #    ssl_certificate      cert.pem;
+    #    ssl_certificate_key  cert.key;
+
+    #    ssl_session_cache    shared:SSL:1m;
+    #    ssl_session_timeout  5m;
+
+    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+    #    ssl_prefer_server_ciphers  on;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+}
+                                              

@@ -1,0 +1,86 @@
+<html>
+<body style="background: url(/media/PN.jpg) no-repeat; background-size: 100%;">
+<img src="/media/embitel_logo.png" alt="EMBITEL" height="13%" width="18%">
+
+<br/><br/><br/>
+
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+
+<div style="padding-left:15%; padding-top:1%;" >
+{% if registration_status %}
+<p><b style="color:green">{{registration_status }}
+{% endif %}
+</div>
+
+<div style="padding-left:20%; padding-top:1%;" >
+	  <form name="form1" method="post" target="_top" id="login_form" action="/login/proc/">
+               <table border="0">
+               <tr>
+		    <td> EMAIL ID:</td>
+		    <td> <input type="text"  name="email" maxlength="60" class="field" size="20" value=""/>
+                         <div class="servererror"> {% if form.errors.email %}* {{ form.errors.email|join:"| " }}<br/>{% endif %} </div>
+                    </td>
+               </tr>
+               <tr/>
+               <tr>
+               	    <td>PASSWORD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	      	    <td><input type="password" autocomplete="off" name="password" maxlength="15" class="field" size="20"/>
+	                <div class="servererror"> {% if form.errors.password %}* {{ form.errors.password|join:"| " }}<br/>{% endif %} </div>
+                    </td>
+                </tr>
+                <tr/>
+                <tr/>
+                <tr/>
+                <tr> 
+		    <td/><td>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input  style="background-color:#F29900" type="submit" value="Login"/>
+                         </td>
+                </tr>
+                </table>
+          </form>
+</div>
+
+<br/>
+<br/>
+
+<div style="padding-left:20%; padding-top:1%;" >
+	 <span style="color:blue"> Not registered yet? </span><span style="color:red"> REGISTER NOW!</span>
+        <p/>
+	<form action="/register/" method="post" target="_top" name="registration" id="registration">
+		    <table>
+		       <tr>
+                    <td>EMAIL ID:</td>
+		    <td><input name="register_email" type="text" maxlength="60" class="field" size="20" value="">
+                        <div class="servererror"> {% if form.errors.register_email %}* {{ form.errors.register_email|join:"| " }}<br/>{% endif %} </div>
+                    </td>
+               </tr>
+               <tr/>
+               <tr>
+                  <td> PASSWORD:</td>
+		  <td> <input name="register_password" type="password" maxlength="35" class="field" size="20">	    
+                       <div class="servererror"> {% if form.errors.register_password %}* {{ form.errors.register_password|join:"| " }}<br/>{% endif %} </div>
+                  </td>
+               </tr>
+               <tr/>
+               <tr>
+                   <td>CONFIRM PASSWORD:</td>
+    		   <td> <input name="confirm_password" type="password"  maxlength="35" class="field" size="20"/>
+                        <div class="servererror"> {% if form.errors.confirm_password %}* {{ form.errors.confirm_password|join:"| " }}<br/>{% endif %} </div>
+                    </td>
+               </tr>
+               <tr/>
+                <tr/>
+                <tr/>
+               <tr>
+		    <td/><td>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		        <input style="background-color:#F29900" type="submit" id="register" name="register" value="Register"/> 
+                   </td>
+               </tr>
+            </table>
+        </form>
+</div>
+
+</body>
+</html>

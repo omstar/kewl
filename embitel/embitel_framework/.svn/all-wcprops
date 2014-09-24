@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework
+END
+dummy.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/dummy.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/views.py
+END
+notification_reminders.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/notification_reminders.py
+END
+get_team_members.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/get_team_members.py
+END
+birthday_notifications.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/birthday_notifications.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/settings.py
+END
+views.py_22-04-2014
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/views.py_22-04-2014
+END
+cer_and_p12.pem
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/cer_and_p12.pem
+END
+views.py.stable
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/views.py.stable
+END
+hrms.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/hrms.py
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/wsgi.py
+END
+views,py_before_bulk_PNS
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/views,py_before_bulk_PNS
+END
+automation.py.bk
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/automation.py.bk
+END
+automation.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/automation.py
+END
+mail.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/mail.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/urls.py
+END
+views_changes.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/views_changes.py
+END
+team.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/team.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/forms.py
+END
+views.py.bk
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/views.py.bk
+END
+team.csv
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/SVN/CompetencyLab/!svn/ver/111/POC/kewl/django_experiments/embitel/embitel_framework/team.csv
+END

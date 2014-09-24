@@ -1,0 +1,123 @@
+<html>
+<body>
+
+<div>
+<img src="/media/embitel.jpg" alt="EMBITEL" height="13%" width="18%">
+
+    <div>
+    <!--img style="float:right;" src="/media/pushnotifications1.png"></div> --!>
+<div style="position: absolute; top: 10; right: 30;">
+<form action='/logout/'>
+    <input style="background-color:#F29900" type="submit" id= "logout" name="logout" value="Logout" />
+</form>
+</div>
+
+
+&nbsp;<br/>
+
+<link rel="stylesheet" type="text/css" href="/media/app.css" />
+
+<ol id="toc">
+ {% if user.is_staff %}
+
+    <li><a href="/embitel/vault/"><span>Dashboard</span></a></li>
+
+    <li><a href="/embitel/upload_certificate/"><span>iOS Push Notifications</span></a></li>
+
+ {% endif %}
+
+    <li class="current"><a href="/embitel/manage_teams/"><span>Team Management</span></a></li>
+
+    <li><a href="/embitel/dashboard/configure_notifications/"><span>Kewl Notifications</span></a></li>
+
+
+</ol>
+<div style="text-align:center">
+&nbsp;<br/>
+<img src="/media/Mobility.png" alt="EMBITEL" align="middle">
+</div>
+
+<div class="content">
+
+
+<form action="." method="post">
+
+    <div>
+	{% if teams %}
+	    <p>
+	    <b>TEAMS:</b></p>
+
+		<select name="team_name">
+		  <option value=""> &nbsp;----- Select any Team -----</option>
+	    {% for team in teams %}
+                  {%  ifequal selected_team team %}
+			  <option value="{{team}}" selected="selected">{{team}}</option>
+                  {% else %}
+			  <option value="{{team}}">{{team}}</option>
+		  {%  endifequal %}
+	    {% endfor %}
+                  </select>
+
+	{% else  %}
+	<p>
+	<b>Sorry..! This feature is only for admin people..!</b>
+	</p>
+
+	{% endif %}
+
+         
+	<input type="submit" value="Submit">
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="/embitel/update_teams/">Click here to Update Teams</a>
+        
+        {% if selected_team %}
+        <br/><br/>
+             Edit Team Name: <input type="text" name="edit_team_name">
+        {% endif %}
+    </div>
+
+	<br/>
+
+    <div>
+       {% if selected_team %}
+
+		 <b>Add User:</b>   <br/>
+	          Name: <input type="text" name="username"> &nbsp;&nbsp;
+	  	  Email: <input type="text" name="email"> &nbsp;&nbsp;
+	          <input type="submit" value="Add">
+       {% endif %}
+    </div>
+
+     &nbsp;<br/>
+    {% if team_objects %}
+    <table border="1" width="60%">
+                <tr>
+                   <td align="center"><b>Employee Name</b></td> <td align="center"><b>Email</b></td>
+                   <td width="10%" align="center"><b>Kewl Application</b></td>
+                   <td align="center"></td>
+                </tr>
+
+      
+
+
+            {% for obj in team_objects %}
+                <tr>
+                    <td align="center">{{ obj.username }}</td> <td align="center">{{ obj.email }}</td>
+                    {% ifequal True obj.installed %}
+                        <td align="center">&#10004;</td>
+                    {% else %}
+                        <td align="center">&nbsp;</td>
+                    {% endifequal %}
+                    <td align="center"><a href="/embitel/manage_teams/{{ obj.id }}/">Delete</a></td>
+                </tr>
+            {% endfor %}
+
+            </table>
+
+    {% endif %}
+
+</form>
+</div>
+</body>
+</html>
