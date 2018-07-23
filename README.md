@@ -1,7 +1,7 @@
 kewl
 ====
 
-kewl application
+kewl is a enterprise application helps in communicating/chatting with colleagues, organize/schedule/invte for meetings, apply leaves etc;
 
 
 Install venv
